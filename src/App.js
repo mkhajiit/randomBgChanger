@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from './Components/Button';
+import handleClick from './Handlers/handleClick';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Home</h1>
+      <Button handler={handleClick} />
+      {/* handler 같은 prop이름은 컴포넌트에서 설정한것과 똑같이 해야함 */}
     </div>
   );
 }
